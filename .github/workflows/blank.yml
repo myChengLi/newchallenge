@@ -1,25 +1,25 @@
 #include<stdio.h>
 struct people//结构体
 {
-	char name[20];
-	int high;
-	int weight;
-	int old;
-	int money;
+  char name[20];
+  int high;
+  int weight;
+  int old;
+  int money;
 
 };
 int main()
 {
-	struct people UE = { "优依",160,58,18,114514 };
-	printf("姓名:%s\n",UE.name);
-	printf("身高：%d\n",UE.high);
-	printf("体重：%d\n",UE.weight);
-	printf("年龄:%d\n", UE.old);
-	printf("财力：%d\n",UE.money);
+  struct people UE = { "优依",160,58,18,114514 };
+  printf("姓名:%s\n",UE.name);
+  printf("身高：%d\n",UE.high);
+  printf("体重：%d\n",UE.weight);
+  printf("年龄:%d\n", UE.old);
+  printf("财力：%d\n",UE.money);
 	
-	//利用指针
-	struct people* pE = &UE;
-	printf("%s\n",(*pE).name);
-	printf("%s\n", pE->name);
-	return 0;
+//利用指针
+  struct people* pE = &UE;
+  printf("%s\n",(*pE).name);
+  printf("%s\n", pE->name);
+  return 0;
 }
